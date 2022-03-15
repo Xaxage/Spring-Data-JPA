@@ -23,7 +23,7 @@ public class SpringBootJpaTestSlice {
     @Autowired
     BookRepository bookRepository;
 
-    @Commit
+    @Commit//This will change our h2 database and sav those changes for next test
     @Order(1)
     @Test
     void testJpaTestSplice() {
